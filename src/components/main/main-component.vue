@@ -16,7 +16,7 @@ export default {
 
 <style>
 .example {
-  color: blue;
+  color: green;
   width: 100%;
   height: 50px;
 }

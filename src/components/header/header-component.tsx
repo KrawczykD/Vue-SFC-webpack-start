@@ -9,7 +9,7 @@ let headercomponent = {
     template:`
     <div class="example">
         <slot></slot>
-        <footer-component>This is a footer component from inside header registered localy</footer-component>
+        <footer-component>This is a footer component from inside header registered localy123</footer-component>
     </div>
     
     `
