@@ -12,9 +12,11 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/entrypoint.ts',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -33,6 +35,9 @@ module.exports = {
     // make sure to include the plugin!
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({filename: 'main.css'}),
+    new HtmlWebpackPlugin({
+      title: 'Hot Module Replacement',
+    }),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -43,8 +48,6 @@ module.exports = {
     clean:true
   },
   devServer: {
-    watchOptions: {
-      poll: true,
-    },
+    contentBase: './dist',
   },
 };
