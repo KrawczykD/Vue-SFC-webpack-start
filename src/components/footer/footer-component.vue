@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="footer">
     <div>{{ msg }}</div> <br>
     <slot/>
   </div>
@@ -16,8 +16,8 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  color: green;
+.footer {
+  color: red;
   width: 100%;
   height: 50px;
 }
