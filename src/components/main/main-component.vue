@@ -1,10 +1,10 @@
 <template>
   <div class="example">
-    {{ msg }}<slot/>
+    {{ msg }} <slot/>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   data () {
     return {
