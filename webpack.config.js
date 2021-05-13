@@ -15,7 +15,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/entrypoint.ts',
+  entry: {bundle: './src/entrypoint.ts'},
   mode: 'development',
   module: {
     rules: [
@@ -36,18 +36,23 @@ module.exports = {
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({filename: 'main.css'}),
     new HtmlWebpackPlugin({
-      title: 'Hot Module Replacement',
+      title:"My app",
+      template: 'index.html'
     }),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean:true
   },
   devServer: {
-    contentBase: './dist',
+    // contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+    filename: 'bundle.js',
+    hot: true,
   },
 };

@@ -1,14 +1,14 @@
 <template>
   <div class="example">
-    {{ msg }} <slot/>
+    {{ msg }} <slot></slot>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data () {
     return {
-      msg: 'Hello world from vue component!'
+      msg: 'Hello world from vue component! main'
     }
   }
 }

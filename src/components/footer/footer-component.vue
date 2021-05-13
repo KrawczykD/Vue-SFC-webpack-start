@@ -9,7 +9,7 @@
 export default {
   data () {
     return {
-      msg: 'Hello world from vue component!'
+      msg: 'Hello world from vue component! footer'
     }
   }
 }
