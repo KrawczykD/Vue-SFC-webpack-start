@@ -6,6 +6,8 @@ import maincomponent from './components/main/main-component.vue'
 import footercomponent from './components/footer/footer-component.vue'
 import headercomponent from './components/header/header-component.vue'
 
+// import testservice from './services/testservice'
+
 export default {
     data: appData,
     mounted: appMounted,

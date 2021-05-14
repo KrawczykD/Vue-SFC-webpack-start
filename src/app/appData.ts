@@ -1,6 +1,7 @@
 let appData = function()  {
     return{
-         test: "test from outside"
+         test: "test from outside",
+         testservice: {}
     }
 }
 

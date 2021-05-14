@@ -1,7 +1,8 @@
-import Itest from './interface'
+import Itest from './interface';
 
-class testservice implements Itest {
-    constructor(test : Itest){
+export default class testservice implements Itest {
+    constructor(test: { name: any; age: any; }){
+   
         this.name = test.name,
         this.age = test.age
     }
@@ -9,8 +10,3 @@ class testservice implements Itest {
     age: number
 
 }
-
-
-
-
-export default testservice
