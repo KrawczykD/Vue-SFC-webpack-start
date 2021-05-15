@@ -9,7 +9,7 @@ let appMethods = {
 
         this.test =  new testservice({name:"To jest moje imie gdy uzyje serwisu" , age:28}).name
 
-        this.test = {age: 34 , name:"Damian z interface"} as Itest
+        // this.test = {age: 34 , name:"Damian z interface"} as Itest
 
     }
 }

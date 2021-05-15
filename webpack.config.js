@@ -58,4 +58,7 @@ module.exports = {
     filename: 'bundle.js',
     hot: true,
   },
+ externals:{
+    'vue' : "Vue"
+  }
 };

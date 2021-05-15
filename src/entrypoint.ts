@@ -1,4 +1,4 @@
-import {createApp} from 'vue';
+// import {createApp} from 'vue';
 import App from './App.vue';
 
-window.vueapp = createApp(App).mount('#vueApp')
+vueapp = Vue.createApp(App).mount('#vueApp')

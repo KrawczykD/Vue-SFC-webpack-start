@@ -1,3 +1,5 @@
+
+
 import Itest from './interface';
 
 export default class testservice implements Itest {
@@ -10,3 +12,4 @@ export default class testservice implements Itest {
     age: number
 
 }
+
