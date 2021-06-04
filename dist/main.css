@@ -1,4 +1,11 @@
 
+.example {
+  color: green;
+  width: 100%;
+  height: 50px;
+}
+
+
 .footer[data-v-2c0f07df] {
   color: red;
   width: 100%;
@@ -8,13 +15,6 @@
 
 .header[data-v-e50b38c2] {
   color: blue;
-  width: 100%;
-  height: 50px;
-}
-
-
-.example {
-  color: green;
   width: 100%;
   height: 50px;
 }
