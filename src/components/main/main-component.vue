@@ -1,6 +1,6 @@
 <template>
   <div class="maincomponent">
-    <button v-on:click="clickTest">click to see test consolelog</button>
+    <b-button type="button" class="positin-relative" v-on:click="togglebookingopen()">X</b-button>
   </div>
 </template>
 
@@ -9,13 +9,19 @@
 
 export default {
 
+  mounted(){
+    console.log("pull data from server")
+  },
+
   data () {
 
   } , 
 
   methods: {
 
-  }
+  },
+
+  props:['togglebookingopen']
 }
 </script>
 

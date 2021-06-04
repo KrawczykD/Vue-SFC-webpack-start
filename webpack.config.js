@@ -59,6 +59,6 @@ module.exports = {
     hot: true,
   },
  externals:{
-    'vue' : "Vue"
+    'vue' : "Vue",
   }
 };
