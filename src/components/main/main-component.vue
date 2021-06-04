@@ -1,36 +1,33 @@
 <template>
-  <div class="example">
-    {{ msg }} <slot></slot>
+  <div class="maincomponent">
     <button v-on:click="clickTest">click to see test consolelog</button>
   </div>
 </template>
 
 <script lang="ts">
 
-import Itest from '../../services/interface'
 
 export default {
 
   data () {
-    return {
-      msg: 'Hello world from vue component! main',
-      test : "" as string
-    }
+
   } , 
 
   methods: {
-    clickTest: function(){
-      this.test = {age:22 , name: "dam"} as Itest
-      console.log(this.test)
-    }
+
   }
 }
 </script>
 
-<style>
-.example {
-  color: green;
-  width: 100%;
-  height: 50px;
+<style scoped>
+.maincomponent {
+  height: 95vh;
+  width: 95vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  
 }
 </style>
